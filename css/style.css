@@ -58,23 +58,28 @@ footer {
     background-size: contain;
 }
 
-#ms_jumbotron_form,
-#ms_reviews_item {
-    background-color: white;
+#ms_jumbotron_form {
+    border-radius: 5px;
+    padding: 10px 10px;
 }
 
 #ms_jumbotron_form input {
     width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
 }
 
 .ms_btn_jumbotron_up {
     background-color: #579aff;
 }
 .ms_btn_jumbotron_down {
+    position: relative;
     border: 1px solid black;
 }
 #ms_google_icon {
     width: 20px;
+    position: absolute;
+    left: 5%;
 }
 /* MAIN */
 /* partners */
