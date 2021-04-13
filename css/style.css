@@ -1,11 +1,12 @@
 /* debug */
 /* [class*="container"] {
+    min-height: 500px;
     background-color: lightblue;
     border: 1px solid black;
 }
 
 [class*="col-"] {
-    height: 100px;
+    height: 300px;
     background-color: lightcoral;
     border: 1px solid white;
 } */
@@ -13,3 +14,42 @@
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/* HEADER */
+/* nav */
+#ms_nav {
+    height: 100px;
+    background-color: lightpink;
+}
+/* jumbotron */
+#ms_jumbotron {
+    background-image: url(../img/bg-banner-home.jpg);
+    background-size: contain;
+}
+
+/* MAIN */
+/* partners */
+#ms_partners {
+    background-color: #f3f5f9;
+}
+
+.ms_partners_item {
+    position: relative;
+}
+
+.ms_partners_item img{
+    width: 100%;
+}
+/* description */
+/* create */
+ms_create {
+    height: 100px;
+    background-color: lightpink;
+}
+/* features */
+/* regions */
+#ms_regions {
+    background-color: #0047c5;
+}
+/* reviews */
+/* get started */
