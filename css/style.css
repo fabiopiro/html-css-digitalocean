@@ -143,6 +143,24 @@ p,
     color: #1d7bfe;
 }
 
+/* ms_create_item - chevron */
+/* ms_reviews_item - chevron */
+.fa-chevron-left,
+.fa-chevron-right {
+    position: absolute;
+    top: 45%;
+    font-size: 50px;
+    color: #031c4e;
+    visibility: hidden;
+}
+.fa-chevron-left {
+    opacity: 0.5;
+    left: -20%;
+}
+.fa-chevron-right {
+    left: 110%;
+}
+
 /* HEADER */
 /* nav */
 #ms_nav {
@@ -219,6 +237,10 @@ p,
 }
 
 /* create */
+#ms_create_item {
+    position: relative;
+}
+
 #ms_create_text h2 {
     padding-bottom: 20px;
 }
@@ -235,6 +257,7 @@ p,
 #ms_create_item p {
     padding-bottom: 50px;
 }
+
 /* features */
 #ms_features h2 {
     padding-bottom: 30px;
@@ -264,6 +287,7 @@ p,
 
 /* reviews */
 #ms_reviews_item {
+    position: relative;
     margin-top: 100px;
     padding: 40px 0;
 }
@@ -280,6 +304,7 @@ p,
 #ms_reviews_item_signature p {
     margin: 0 0;
 }
+
 
 /* get started */
 #ms_get_started {
@@ -347,12 +372,20 @@ footer {
 
 
 @media (min-width: 768px) {
+
+    /* ms_create_item - chevron */
+    /* ms_reviews_item - chevron */
+    .fa-chevron-left,
+    .fa-chevron-right {
+    visibility: visible;
+}
+
     /* ms_reviews - rockerbox logo */
     #ms_reviews img {
         width: 75%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
     /* ms_reviews - rockerbox logo */
     #ms_reviews img {
         width: 50%;
