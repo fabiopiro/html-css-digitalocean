@@ -29,7 +29,7 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-7">
                             <!-- jumbotron text -->
-                            <div class="ms_jumbotron_text">
+                            <div id="ms_jumbotron_text">
                                 <h1>The simplest cloud platform for developers & teams</h1>
                                 <p>Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and business, whether you're running one virtual machine or ten thousand.</p>
                             </div>
@@ -38,7 +38,8 @@
                         <!-- jumbotron form -->
                         <div class="col-xs-12 col-sm-5">
                             <div id="ms_jumbotron_form">
-                                <h2>Deploy your app in seconds. <a href="#">Get started now.</a></h2>
+                                <h2>Deploy your app in seconds.</h2>
+                                <h2><a href="#">Get started now.</a></h2>
                                 <input type="email" placeholder="Email">
                                 <input type="password" placeholder="Password">
                                 <div class="btn btn-block ms_btn_jumbotron_up">
@@ -62,6 +63,7 @@
         <main>
             <!-- partners -->
             <section id="ms_partners">
+                <p>innovative business trust digitalocean</p>
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-6 col-sm-2">
@@ -96,12 +98,13 @@
                         </div>
                     </div>
                 </div>
+                <a href="#">View customer stories</a>
             </section>
             <!-- /partners -->
             <!-- description -->
             <section id="ms_description">
                 <!-- description text -->
-                <div class="ms_description_text">
+                <div id="ms_description_text">
                     <h2>Deploy and scale seamlessly</h2>
                     <p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted service, client websites, or CI/CD environments.</p>
                 </div>
@@ -110,12 +113,14 @@
                     <div class="row">
                         <!-- description list -->
                         <div class="col-xs-12 col-sm-3 col-sm-offset-1">
-                            <div class="ms_description_list">
-                                <h3>Deploy</h3>
-                                <h3>Manage</h3>
-                                <h3>Secure</h3>
-                                <h3>Scale</h3>
-                                <h3>Monitor</h3>
+                            <div id="ms_description_list">
+                                <ul>
+                                    <li><h3>Deploy</h3></li>
+                                    <li><h3>Manage</h3></li>
+                                    <li><h3>Secure</h3></li>
+                                    <li><h3>Scale</h3></li>
+                                    <li><h3>Monitor</h3></li>
+                                </ul>
                             </div>
                         </div>
                         <!-- /description list -->
@@ -124,32 +129,40 @@
                             <div class="row">
                                 <!-- description item 1 -->
                                 <div class="col-xs-12 col-sm-6">
-                                    <img src="img/cluster-deploy.svg" alt="cluster logo">
-                                    <h3>Cluster deployments</h3>
-                                    <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                                    <div class="ms_description_item">
+                                        <img src="img/cluster-deploy.svg" alt="cluster logo">
+                                        <h3>Cluster deployments</h3>
+                                        <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API.</p>
+                                    </div>
                                 </div>
                                 <!-- /description item 1 -->
                                 <!-- description item 2 -->
                                 <div class="col-xs-12 col-sm-6">
-                                    <img src="img/optimized-compute.svg" alt="optimized logo">
-                                    <h3>Optimized compute types</h3>
-                                    <p>Get the compute resources you need with Standard or Optimized Droplets</p>
+                                    <div class="ms_description_item">
+                                        <img src="img/optimized-compute.svg" alt="optimized logo">
+                                        <h3>Optimized compute types</h3>
+                                        <p>Get the compute resources you need with Standard or Optimized Droplets</p>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <!-- /description item 2 -->
                                 <!-- description item 3 -->
                                 <div class="col-xs-12 col-sm-6">
-                                    <img src="img/one-click.svg" alt="one click logo">
-                                    <h3>One-click apps</h3>
-                                    <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                                    <div class="ms_description_item">
+                                        <img src="img/one-click.svg" alt="one click logo">
+                                        <h3>One-click apps</h3>
+                                        <p>Skip the install and configuration process with pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                                    </div>
                                 </div>
                                 <!-- /description item 3 -->
                                 <!-- description item 4 -->
                                 <div class="col-xs-12 col-sm-6">
-                                    <img src="img/global.svg" alt="global logo">
-                                    <h3>Global availability</h3>
-                                    <p>Deploy to any of our data center regions around the world.</p>
+                                    <div class="ms_description_item">
+                                        <img src="img/global.svg" alt="global logo">
+                                        <h3>Global availability</h3>
+                                        <p>Deploy to any of our data center regions around the world.</p>
+                                    </div>
                                 </div>
                                 <!-- /description item 4 -->
                             </div>
@@ -161,15 +174,19 @@
             <!-- /description -->
             <!-- create -->
             <section id="ms_create">
-                <h2>Designed for developers</h2>
-                <h4>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API</h4>
+                <div id="ms_create_text">
+                    <h2>Designed for developers</h2>
+                    <p>Build more and spend less time managing your infrastructure with our easy-to-use control panel and API</p>
+                </div>
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
-                            <div id="ms_create_image_container">
-                                <img src="img/slide.jpg" alt="">
+                            <div id="ms_create_item">
+                                <div id="ms_create_image_container">
+                                    <img src="img/slide.jpg" alt="">
+                                </div>
+                                <p>Create compute servers in 55 seconds or less.</p>
                             </div>
-                            <p>Create compute servers in 55 seconds or less.</p>
                         </div>
                     </div>
                 </div>
@@ -181,22 +198,28 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-xs-12 col-sm-4">
-                            <img src="img/pred-pricing.svg" alt="predictable logo">
-                            <h3>Predictable pricing</h3>
-                            <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
-                            <a href="#">Pricing</a>
+                            <div class="ms_features_item">
+                                <img src="img/pred-pricing.svg" alt="predictable logo">
+                                <h3>Predictable pricing</h3>
+                                <p>Leave complex pricing structures behind. Always know what you'll pay per month with a flat, industry-leading pricing structure.</p>
+                                <a href="#">Pricing</a>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <img src="img/world-class.svg" alt="world class logo">
-                            <h3>World-class service</h3>
-                            <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
-                            <a href="#">Support</a>
+                            <div class="ms_features_item">
+                                <img src="img/world-class.svg" alt="world class logo">
+                                <h3>World-class service</h3>
+                                <p>Free round-the-clock technical support for all customers. You'll feel the love.</p>
+                                <a href="#">Support</a>
+                            </div>
                         </div>
                         <div class="col-xs-12 col-sm-4">
-                            <img src="img/reliable-platform.svg" alt="reliable logo">
-                            <h3>Reliable platform</h3>
-                            <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
-                            <a href="#">Security</a>
+                            <div class="ms_features_item">
+                                <img src="img/reliable-platform.svg" alt="reliable logo">
+                                <h3>Reliable platform</h3>
+                                <p>More than 100,000 developer teams worldwide trust DigitalOcean to support their business with a 99.99% uptime SLA for all services.</p>
+                                <a href="#">Security</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -440,10 +463,12 @@
                     <div class="row">
                         <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3">
                             <div id="ms_reviews_item">
-                                <img src="img/wework.svg" alt="">
-                                <h4>"We have been able to make scaling the technical infrastructure of our business cost effective and efficent"</h4>
-                                <p>Rick O'Toole</p>
-                                <p>Co-founder and CTO</p>
+                                <img src="img/rockerbox.png" alt="rockerbox logo">
+                                <p>"We have been able to make scaling the technical infrastructure of our business cost effective and efficent"</p>
+                                <div id="ms_reviews_item_signature">
+                                    <p>Rick O'Toole</p>
+                                    <p>Co-founder and CTO</p>
+                                </div>
                                 <a href="#">Read story</a>
                             </div>
                         </div>
@@ -467,7 +492,7 @@
                     <div class="col-xs-12 col-lg-4">
                         <div id="ms_footer_copyright">
                             <img src="img/logo-small.svg" alt="digital ocean logo">
-                            <p>&copy; 2018 DigitalOcean, LCC. All rights reserved.</p>
+                            <p>&copy; 2018 DigitalOcean, LLC. All rights reserved.</p>
                             <p>Proudly made in NY</p>
                             <!-- social -->
                             <div id="ms_footer_copyright_social">
