@@ -1,14 +1,3 @@
-/* debug */
-/* [class*="container"] {
-    background-color: lightblue;
-    border: 1px solid black;
-}
-
-[class*="col-"] {
-    background-color: lightcoral;
-    border: 1px solid white;
-} */
-
 /* common */
 body {
     font-family: 'Roboto', sans-serif;
@@ -75,9 +64,6 @@ p {
     font-size: 16px;
 }
 
-#ms_jumbotron_form p {
-    font-size: 10px;
-}
 /* common text color */
 h1,
 #ms_regions h2,
@@ -99,18 +85,7 @@ p,
     color: #5a6887;
 }
 
-#ms_jumbotron_text p {
-    color: lightgray;
-}
-
-/* common text align */
-#ms_features h2,
-#ms_regions h2,
-.ms_regions_table_row .col-xs-2 {
-    text-align: center;
-}
-
-/* common link */
+/* link */
 #ms_jumbotron_form a,
 .ms_link_heavy,
 .ms_get_started_btn {
@@ -163,14 +138,41 @@ p,
 
 /* HEADER */
 /* nav */
-#ms_nav {
-    height: 100px;
-    background-color: lightpink;
+.ms_my_navbar {
+    margin-bottom: 0px;
+    background-color: white;
+    border-color: white;
 }
+.ms_my_navbar .navbar-nav>li>a {
+    color: #031c4e;
+    padding-left: 0;
+}
+.ms_my_navbar .navbar-toggle {
+    border: none;
+}
+.ms_my_navbar .navbar-toggle .icon-bar {
+    width: 15px;
+    background-color: #1d7bfe;
+}
+.navbar-brand img {
+    line-height: 50px;
+    height: 19px;
+    margin-right: 100px;
+}
+.ms_btn_navbar {
+    margin-top: 8.5px;
+    color: #1d7bfe;
+    border: 1px solid #1d7bfe;
+}
+
 /* jumbotron */
 #ms_jumbotron {
     background-image: url(../img/bg-banner-home.jpg);
     background-size: contain;
+}
+
+#ms_jumbotron_text p {
+    color: lightgray;
 }
 
 #ms_jumbotron_form {
@@ -180,24 +182,38 @@ p,
 #ms_jumbotron_form h2 {
     font-size: 28px;
 }
+#ms_jumbotron_form h2:nth-of-type(2) {
+    margin-top: 0px;
+}
 
 #ms_jumbotron_form input {
     width: 100%;
-    padding: 10px 0;
+    padding: 10px 5px;
     margin: 5px 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
 }
 
-.ms_btn_jumbotron_up {
+.ms_btn_jumbotron_create {
     background-color: #579aff;
+    color: white;
 }
-.ms_btn_jumbotron_down {
+.ms_btn_jumbotron_sign {
     position: relative;
-    border: 1px solid black;
+    box-shadow: 2px 2px lightgray;
 }
 #ms_google_icon {
     width: 20px;
     position: absolute;
     left: 5%;
+}
+
+#ms_jumbotron_form p {
+    font-size: 10px;
+    margin-top: 10px;
+}
+#ms_jumbotron_form p a {
+    text-decoration: underline;
 }
 /* MAIN */
 /* partners */
@@ -267,6 +283,14 @@ p,
     padding-bottom: 30px;
 }
 /* regions */
+#ms_regions h2,
+.ms_regions_table_row .col-xs-2 {
+    text-align: center;
+}
+.ms_regions_table_row .col-xs-3 {
+    text-align: right;
+}
+
 .ms_regions_table {
     padding: 15px 0;
 }
@@ -383,10 +407,57 @@ footer {
     /* ms_reviews - rockerbox logo */
     #ms_reviews img {
         width: 75%;
+    }
+}
+
+/* navbar collapse fix */
+/* https://stackoverflow.com/questions/19827605/change-bootstrap-navbar-collapse-breakpoint-without-using-less */
+@media (max-width: 991px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
 }
 
 @media (min-width: 1200px) {
+
+    /* ms_jumbotron - title h1 */
+    h1 {
+        font-size: 70px;
+    }
+
     /* ms_reviews - rockerbox logo */
     #ms_reviews img {
         width: 50%;
+    }
 }
