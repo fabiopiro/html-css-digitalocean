@@ -60,9 +60,10 @@ p {
 .ms_features_item p,
 #ms_reviews_item_signature p,
 #ms_footer_copyright p,
-.ms_footer_list ul li a {
+.ms_footer_list {
     font-size: 16px;
 }
+
 
 /* common text color */
 h1,
@@ -101,6 +102,11 @@ p,
 .ms_regions_table_row a::after {
     content: ">";
     margin-left: 10px;
+}
+.ms_link_heavy:hover {
+    text-decoration: none;
+    color: #1d7bfe;
+    border-bottom: 1px solid #1d7bfe;
 }
 
 /* circle list */
@@ -298,17 +304,22 @@ p,
 .ms_regions_table_row {
     line-height: 18px;
     padding-top: 10px;
+}
+.ms_regions_table_row {
     border-bottom: 2px solid lightgray;
 }
-
 .ms_regions_table_row p,
 .ms_regions_table_row a {
     font-size: 13px;
 }
+
 .ms_regions_table_row a {
     color: #00ced0;
 }
-
+.ms_regions_table_row a:hover {
+    text-decoration: none;
+    border-bottom: 1px solid #00ced0;
+}
 /* reviews */
 #ms_reviews_item {
     position: relative;
@@ -353,7 +364,7 @@ footer {
 
 #ms_footer_copyright p:first-of-type,
 #ms_footer_copyright_social a,
-.ms_footer_list ul li a {
+.ms_footer_list a {
     color: #a5acbc;
 }
 
@@ -375,23 +386,57 @@ footer {
     padding-right: 8px;
 }
 
-.ms_footer_list ul {
+.ms_footer_list {
     padding-inline-start: 0px;
     list-style: none;
     margin-bottom: 20px;
 }
 
-.ms_footer_list ul li {
+.ms_footer_list li {
     padding-bottom: 9px;
 }
-.ms_footer_list ul li:first-child {
+.ms_footer_list li:first-child {
     font-size: 19px;
     font-weight: 700;
     color: white;
 }
 
-.ms_footer_list ul li a {
+.ms_footer_list a {
     text-decoration: none;
+}
+
+/* fixed element */
+#ms_fixed {
+    position: fixed;
+    bottom: 2%;
+    left: 5%;
+    z-index: 1000;
+}
+
+#ms_fixed_image_container {
+    width: 70px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #006aff;
+    padding: 2px;
+    margin-bottom: 15px;
+    border: 1px solid black;
+}
+
+#ms_fixed_image_container img {
+    width: 100%;
+}
+
+#ms_fixed_text {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px 7.5px;
+    border: 1px solid black;
+}
+
+#ms_fixed_text span {
+    font-size: 16px;
+    color: #031c4e;
 }
 
 
@@ -401,13 +446,14 @@ footer {
     /* ms_reviews_item - chevron */
     .fa-chevron-left,
     .fa-chevron-right {
-    visibility: visible;
-}
+        visibility: visible;
+    }
 
     /* ms_reviews - rockerbox logo */
     #ms_reviews img {
         width: 75%;
     }
+
 }
 
 /* navbar collapse fix */
@@ -459,5 +505,10 @@ footer {
     /* ms_reviews - rockerbox logo */
     #ms_reviews img {
         width: 50%;
+    }
+
+    /* fixed */
+    #ms_fixed {
+        right: 5%;
     }
 }
